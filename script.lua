@@ -67,3 +67,16 @@ MainTab:Button{
         end
     end
 }
+MainTab:Toggle{
+    Name = "Click 1000 Times",
+    StartingState = false,
+    Description = pwt,
+    Callback = function() 
+     for i = 1,2250 do 
+ local Event = game:GetService("ReplicatedStorage").Packages.Knit.Services.ClickService.RF.Click
+  Event:InvokeServer()
+    end
+end
+
+}
+    
